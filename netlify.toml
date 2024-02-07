@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build" # Command to build your site
+  publish = "dist"          # Directory to publish (Vite's default output directory)
+
+# Optional: if your functions are in a directory other than the default 'netlify/functions'
+[functions]
+  directory = "functions"
+
+# Redirects and rewrites (if needed)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Environment variables
+# These can also be set in the Netlify UI under Site Settings -> Build & Deploy -> Environment
+[build.environment]
+  OPENAI_API_KEY  = ""
+

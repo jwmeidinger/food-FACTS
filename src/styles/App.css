@@ -1,0 +1,62 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* styles.css */
+body {
+  background-color: #343a40; /* Bootstrap dark theme background */
+  color: #ffffff; /* Light text */
+}
+
+/* Customizes the file input to better fit the dark theme */
+.custom-file-input {
+  border-color: #6c757d;
+  background-color: #495057;
+  color: white;
+}
+
+/* Dark theme adjustments for form-control elements */
+.form-control {
+  background-color: #495057;
+  border-color: #6c757d;
+  color: white;
+}
+
+/* Ensure the loading text is visible in dark mode */
+.sr-only {
+  color: white;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
